@@ -1,0 +1,129 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #13151f;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+/* 
+.app {
+  margin: 20px;
+  width: 900px;
+} */
+/* 
+.section {
+  width: 1500px;
+} */
+
+.main-video {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.main-video img {
+  width: 100%;
+}
+
+.card {
+  width: 19.2%;
+  height: fit-content;
+  border-radius: 5%;
+  margin: 0.4%;
+  filter: drop-shadow(5px 5px 10px #000);
+  background-color: aqua;
+
+}
+
+
+/* Section {
+  background-color: aqua;
+  width: 19.2%;
+  height: fit-content;
+  border-radius: 5%;
+  margin: 0.4%;
+  filter: drop-shadow(5px 5px 10px #000);
+} */
+
+
+.video-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.info {
+  position: relative;
+  margin-top: 30%;
+  margin-left: 50px;
+  max-width: 50%;
+}
+
+.video-overlay {
+  position: absolute;
+}
+
+.info-footer {
+  height: 100vh;
+}
+
+.account-info {
+  display: flex;
+  height: 50%;
+  margin: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.franchise {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 36%;
+  height: auto;
+  place-items: center;
+  justify-content: space-between;
+  background-color: #1E2841;
+  margin: 25px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 10px #000);
+
+}
+
+.video-feed {
+  /* width: max-content; */
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5%;
+  margin: 0.4%;
+  /* flex-wrap: wrap; */
+}
+
+.logo-wrapper {
+  padding: 20px 0px;
+}
