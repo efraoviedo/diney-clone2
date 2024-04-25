@@ -1,4 +1,6 @@
 import { gql, GraphQLClient } from "graphql-request";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export const getServerSideProps = async (pageContext) => {
@@ -61,9 +63,11 @@ const Video = ({ video }) => {
   return (
     <>
       {!watching && (
-        <img
+        <Image
           className="video-image"
           src={video.thumbnail.url}
+          width={198}
+          height={700}
           alt={video.title}
         />
       )}
@@ -71,9 +75,12 @@ const Video = ({ video }) => {
         <div className="info">
           <p>{video.tags.join(",  ")}</p>
           <p>{video.description}</p>
-          <a href="/">
-            <p>go back</p>
-          </a>
+          {/* <a href="/"> */}
+          {/* <p>go back</p> */}
+          {/* </a> */}
+          <Link href="/">
+            <p>Inicio</p>
+          </Link>
           <button
             className="video-overlay"
             onClick={() => {
@@ -90,6 +97,10 @@ const Video = ({ video }) => {
           <source src={video.mp4.url} type="video/mp4" />
         </video>
       )}
+      <p>Volver</p>
+      <Link href="/">
+        <p>Inicio</p>
+      </Link>
       <div
         className="info-footer"
         onClick={() => (watching ? setWatching(false) : null)}

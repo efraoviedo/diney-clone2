@@ -84,8 +84,8 @@ const Home = ({ videos, account }) => {
       <NavBar account={account} />
       <div className="app">
         <div className="main-video">
-          <img
-            src={randomVideo(videos).thumbnail.url}
+          <Image
+            src={randomVideo(videos).thumbnail.url} width={198} height={400} 
             alt={randomVideo(videos).title}
           />
         </div>
@@ -93,27 +93,27 @@ const Home = ({ videos, account }) => {
         <div className="video-feed">
           <Link href="#disney">
             <div className="franchise" id="disney">
-              <Image src={logodisney} width={198} height={77} />
+              <Image src={logodisney} width={198} height={77} alt="Logo diney" />
             </div>
           </Link>
           <Link href="#pixar">
             <div className="franchise" id="pixar">
-              <Image src={pixarimages} width={199} height={79} />
+              <Image src={pixarimages} width={199} height={79} alt="Logo Pixar" />
             </div>
           </Link>
           <Link href="#star-wars">
             <div className="franchise" id="star-wars">
-              <Image src={startawarslogo} width={199} height={79} />
+              <Image src={startawarslogo} width={199} height={79} alt="Logo starwars"/>
             </div>
           </Link>
           <Link href="#nat-geo">
             <div className="franchise" id="nat-geo">
-              <Image src={nationalGlogo} width={199} height={79} />
+              <Image src={nationalGlogo} width={199} height={79} alt="Logo national"/>
             </div>
           </Link>
           <Link href="#marvel">
             <div className="franchise" id="marvel">
-              <Image src={marvellogo} width={198} height={77} />
+              <Image src={marvellogo} width={198} height={77} alt="Logo marvel"/>
             </div>
           </Link>
           </div> 

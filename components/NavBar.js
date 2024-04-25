@@ -13,7 +13,7 @@ const NavBar = ({ account }) => {
 
       <div className="account-info">
         <p>Welcome {account.username}</p>
-        <img className="avatar" src={account.avatar.url} alt="" />
+        <Image className="avatar" src={account.avatar.url} width={198} height={120} alt="avatar" />
       </div>
     </div>
   );
